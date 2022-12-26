@@ -133,7 +133,30 @@ class Cards extends StatelessWidget {
                     Image(
                         image: AssetImage('assets/arrecife.jpg'),
                     ),
-                    Acordeon()
+                    AcordeonType1()
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              child: ClipRRect(
+                borderRadius: const BorderRadius.vertical(
+                      top: Radius.circular(4.0),
+                      bottom: Radius.circular(4.0)
+                ),
+                child: Column(
+                  children: const [
+                    Image(
+                        image: AssetImage('assets/arrecife.jpg'),
+                    ),
+                    ExpansionTile(
+                      title: Text('Expasion Tile Widget'),
+                      children: [
+                        ListTile(
+                          title: Text('Subcontent'),
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
@@ -148,14 +171,14 @@ class Cards extends StatelessWidget {
   }
 }
 
-class Acordeon extends StatefulWidget {
-  const Acordeon({ Key? key, }) : super(key: key);
+class AcordeonType1 extends StatefulWidget {
+  const AcordeonType1({ Key? key, }) : super(key: key);
 
   @override
-  State<Acordeon> createState() => _AcordeonState();
+  State<AcordeonType1> createState() => _AcordeonType1State();
 }
 
-class _AcordeonState extends State<Acordeon> {
+class _AcordeonType1State extends State<AcordeonType1> {
 
   bool _expanded = false;
 
