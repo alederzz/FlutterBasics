@@ -47,6 +47,26 @@ class NavigationDrawer extends StatelessWidget {
               color: Colors.blue[500]
             ),
           ),
+          ListTile(
+            title: const Text('Form Example'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/form_example');
+            },
+            leading: Icon(
+              Icons.person_outline,
+              color: Colors.blue[500]
+            ),
+          ),
+          ListTile(
+            title: const Text('Shared Preferences'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/shared_preferences');
+            },
+            leading: Icon(
+              Icons.person_outline,
+              color: Colors.blue[500]
+            ),
+          ),
         ],
       ),
     );
