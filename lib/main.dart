@@ -1,5 +1,6 @@
 import 'package:bloc_app/pages/cards.dart';
 import 'package:bloc_app/pages/counter.dart';
+import 'package:bloc_app/pages/form.dart';
 import 'package:bloc_app/pages/login.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const Login(),
         '/counter': (context) => const Counter(title: 'New Flutter Counter'),
         '/cards': (context) => const Cards(),
+        '/form_example': (context) => const FormExample(),
       },
       theme: ThemeData.dark(),
     );
