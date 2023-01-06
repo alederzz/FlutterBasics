@@ -20,7 +20,7 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Login Page'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/');
+              Navigator.popAndPushNamed(context, '/');
             },
             leading: Icon(
               Icons.person_outline,
@@ -30,7 +30,7 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Counter'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/counter');
+              Navigator.popAndPushNamed(context, '/counter');
             },
             leading: Icon(
               Icons.person_outline,
@@ -40,7 +40,7 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Cards'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/cards');
+              Navigator.popAndPushNamed(context, '/cards');
             },
             leading: Icon(
               Icons.person_outline,
@@ -50,7 +50,7 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Form Example'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/form_example');
+              Navigator.popAndPushNamed(context, '/form_example');
             },
             leading: Icon(
               Icons.person_outline,
@@ -60,7 +60,7 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Shared Preferences'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/shared_preferences');
+              Navigator.popAndPushNamed(context, '/shared_preferences');
             },
             leading: Icon(
               Icons.person_outline,
