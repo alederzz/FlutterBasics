@@ -1,6 +1,7 @@
 import 'package:bloc_app/pages/cards.dart';
 import 'package:bloc_app/pages/counter.dart';
 import 'package:bloc_app/pages/form.dart';
+import 'package:bloc_app/pages/lists.dart';
 import 'package:bloc_app/pages/login.dart';
 import 'package:bloc_app/pages/shared_pref.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/cards': (context) => const Cards(),
         '/form_example': (context) => const FormExample(),
         '/shared_preferences': (context) => const SharedPref(),
+        '/lists': (context) => const ListsPage(),
       },
       theme: ThemeData.dark(),
     );
